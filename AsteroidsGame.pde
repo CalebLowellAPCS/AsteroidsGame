@@ -1,4 +1,6 @@
 //your variable declarations here
+SpaceShip best;
+
 public void setup() 
 {
   //your code here
@@ -9,6 +11,10 @@ public void draw()
 }
 class SpaceShip extends Floater  
 {   
+    public void setX(int newX){
+      x = newX;
+    }
+    public 
     //your code here
 }
 abstract class Floater //Do NOT modify the Floater class! Make changes in the SpaceShip class 
