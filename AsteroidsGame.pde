@@ -11,10 +11,11 @@ public void draw()
 }
 class SpaceShip extends Floater  
 {   
-    public void setX(int newX){
-      x = newX;
-    }
-    public 
+    public void setX(int newX){ x = newX;}
+    public int getX(){return (int) x;}
+    public void setY(int newY){ y = newY;}
+    public int getY(){ return (int) y;}\
+    
     //your code here
 }
 abstract class Floater //Do NOT modify the Floater class! Make changes in the SpaceShip class 
