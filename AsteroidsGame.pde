@@ -14,7 +14,9 @@ class SpaceShip extends Floater
     public void setX(int newX){ x = newX;}
     public int getX(){return (int) x;}
     public void setY(int newY){ y = newY;}
-    public int getY(){ return (int) y;}\
+    public int getY(){ return (int) y;}
+    public void setDirectionX(double newX){ x = newX; }
+    public int getDirectionX(){return }
     
     //your code here
 }
