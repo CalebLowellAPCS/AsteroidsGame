@@ -16,7 +16,11 @@ class SpaceShip extends Floater
     public void setY(int newY){ y = newY;}
     public int getY(){ return (int) y;}
     public void setDirectionX(double newX){ x = newX; }
-    public int getDirectionX(){return }
+    public double getDirectionX(){return (double) x;}
+    public void setDirectionY(double newY){ y = newY; }
+    public double getDirectionY(){return (double) y;}
+    public void setPointDirection(int newDegrees){degrees = newDegrees;}
+    public double getPointDirection(){return (double) degrees;}
     
     //your code here
 }
