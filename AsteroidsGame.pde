@@ -3,15 +3,17 @@ SpaceShip best;
 
 public void setup() 
 {
+  best = new SpaceShip();
   //your code here
 }
 public void draw() 
 {
+  best.show();
   //your code here
 }
 class SpaceShip extends Floater  
 {   
-    public void setX(int newX){ x = newX;}
+    public void setX(int newX){x = newX;}
     public int getX(){return (int) x;}
     public void setY(int newY){ y = newY;}
     public int getY(){ return (int) y;}
@@ -22,7 +24,8 @@ class SpaceShip extends Floater
     public void setPointDirection(int newDegrees){degrees = newDegrees;}
     public double getPointDirection(){return (double) degrees;}
     
-    SpaceShip(int corners, int[] xCorners, int[] yCorners, int myColor, double myCenterX, double myCenterY, double myPointDirection, double myDirectionX, double myDirectionY){
+    //int corners, int[] xCorners, int[] yCorners, int myColor, double myCenterX, double myCenterY, double myPointDirection, double myDirectionX, double myDirectionY
+    SpaceShip(){
 
       corners = 3;
       xCorners = new int[corners];
@@ -31,13 +34,10 @@ class SpaceShip extends Floater
       yCorners[0] = -8;
       xCorners[1] = 16;
       xCorners[1] = 0;
-      xCorners[2] - 8;
-      yCorners[2] - 8;
+      xCorners[2] = -8;
+      yCorners[2] = 8;
 
       myColor = color(0, 0, 0);
-
-
-
     }
     
     //your code here
