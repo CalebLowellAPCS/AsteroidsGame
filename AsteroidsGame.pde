@@ -3,6 +3,7 @@ SpaceShip best;
 
 public void setup() 
 {
+  size(500, 500);
   best = new SpaceShip();
   //your code here
 }
@@ -13,16 +14,16 @@ public void draw()
 }
 class SpaceShip extends Floater  
 {   
-    public void setX(int newX){x = newX;}
-    public int getX(){return (int) x;}
-    public void setY(int newY){ y = newY;}
-    public int getY(){ return (int) y;}
-    public void setDirectionX(double newX){ x = newX; }
-    public double getDirectionX(){return (double) x;}
-    public void setDirectionY(double newY){ y = newY; }
-    public double getDirectionY(){return (double) y;}
-    public void setPointDirection(int newDegrees){degrees = newDegrees;}
-    public double getPointDirection(){return (double) degrees;}
+    public void setX(int x){myCenterX = x;}
+    public int getX(){return (int) myCenterX;}
+    public void setY(int y){myCenterY = y;}
+    public int getY(){return (int) myCenterY;}
+    public void setDirectionX(double x){myDirectionX = x; }
+    public double getDirectionX(){return (double) myDirectionX;}
+    public void setDirectionY(double y){myDirectionY = y; }
+    public double getDirectionY(){return (double) myDirectionY;}
+    public void setPointDirection(int degrees){myPointDirection = degrees;}
+    public double getPointDirection(){return (double) myPointDirection;}
     
     //int corners, int[] xCorners, int[] yCorners, int myColor, double myCenterX, double myCenterY, double myPointDirection, double myDirectionX, double myDirectionY
     SpaceShip(){
@@ -37,7 +38,12 @@ class SpaceShip extends Floater
       xCorners[2] = -8;
       yCorners[2] = 8;
 
-      myColor = color(0, 0, 0);
+      myColor = color(0, 197, 0);
+
+      myCenterX = 0;
+      myCenterY = 0;
+
+      myPointDirection
     }
     
     //your code here
