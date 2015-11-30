@@ -43,7 +43,8 @@ class SpaceShip extends Floater
       myCenterX = 0;
       myCenterY = 0;
 
-      myPointDirection
+      myPointDirection = 0;
+      
     }
     
     //your code here
