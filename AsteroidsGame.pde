@@ -9,6 +9,7 @@ public void setup()
 }
 public void draw() 
 {
+  background(0);
   best.show();
   //your code here
 }
@@ -39,12 +40,20 @@ class SpaceShip extends Floater
       yCorners[2] = 8;
 
       myColor = color(0, 197, 0);
-
-      myCenterX = 0;
       myCenterY = 0;
-
+      myCenterX = 0;
+      myDirectionY = 0;
+      myDirectionX = 0;
       myPointDirection = 0;
-      
+/*
+      best.setX(0);
+      best.setY(0);
+
+      best.setDirectionX(0);
+      best.setDirectionY(0);
+
+      best.setPointDirection(0);
+     */ 
     }
     
     //your code here
@@ -125,4 +134,3 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
     endShape(CLOSE);  
   }   
 } 
-
