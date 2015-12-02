@@ -1,33 +1,49 @@
 //your variable declarations here
-SpaceShip best;
+SpaceShip pan = new SpaceShip();
 
 public void setup() 
 {
   size(500, 500);
-  best = new SpaceShip();
-  //your code here
 }
 public void draw() 
 {
-  background(0);
-  best.show();
+  background(50);
+  pan.show();
+  pan.move();
   //your code here
+}
+public void keyPressed(){
+
+if(key == '8'){
+
+  pan.accelerate(0.2);
+}
+if(key == '5'){
+
+  pan.accelerate(-0.2);
+}
+if(key == '6'){
+
+  pan.rotate(5);
+}
+if(key == '4'){
+
+  pan.rotate(-5);
+}
+if(key == '0'){
+
+  pan.setX((int)(Math.random()*500));
+  pan.setY((int)(Math.random()*500));
+  pan.setDirectionX(0);
+  pan.setDirectionY(0);
+  pan.setPointDirection((int)(Math.random()*360));
+}
+
+
 }
 class SpaceShip extends Floater  
 {   
-    public void setX(int x){myCenterX = x;}
-    public int getX(){return (int) myCenterX;}
-    public void setY(int y){myCenterY = y;}
-    public int getY(){return (int) myCenterY;}
-    public void setDirectionX(double x){myDirectionX = x; }
-    public double getDirectionX(){return (double) myDirectionX;}
-    public void setDirectionY(double y){myDirectionY = y; }
-    public double getDirectionY(){return (double) myDirectionY;}
-    public void setPointDirection(int degrees){myPointDirection = degrees;}
-    public double getPointDirection(){return (double) myPointDirection;}
-    
-    //int corners, int[] xCorners, int[] yCorners, int myColor, double myCenterX, double myCenterY, double myPointDirection, double myDirectionX, double myDirectionY
-    SpaceShip(){
+  SpaceShip(){
 
       corners = 3;
       xCorners = new int[corners];
@@ -39,22 +55,25 @@ class SpaceShip extends Floater
       xCorners[2] = -8;
       yCorners[2] = 8;
 
-      myColor = color(0, 197, 0);
-      myCenterY = 0;
-      myCenterX = 0;
+      myColor = 197;
+      myCenterY = 250;
+      myCenterX = 250;
       myDirectionY = 0;
       myDirectionX = 0;
       myPointDirection = 0;
-/*
-      best.setX(0);
-      best.setY(0);
 
-      best.setDirectionX(0);
-      best.setDirectionY(0);
-
-      best.setPointDirection(0);
-     */ 
     }
+      public void setX(int x){myCenterX = x;}
+    public int getX(){return (int) myCenterX;}
+    public void setY(int y){myCenterY = y;}
+    public int getY(){return (int) myCenterY;}
+    public void setDirectionX(double x){myDirectionX = x; }
+    public double getDirectionX(){return (double) myDirectionX;}
+    public void setDirectionY(double y){myDirectionY = y; }
+    public double getDirectionY(){return (double) myDirectionY;}
+    public void setPointDirection(int degrees){myPointDirection = degrees;}
+    public double getPointDirection(){return (double) myPointDirection;}
+    
     
     //your code here
 }
