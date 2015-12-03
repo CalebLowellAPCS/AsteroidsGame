@@ -7,7 +7,7 @@ public void setup()
 }
 public void draw() 
 {
-  background(50);
+  background(0);
   pan.show();
   pan.move();
   //your code here
@@ -40,6 +40,12 @@ if(key == '0'){
 }
 
 
+}
+class Stars{
+  
+  Stars(){
+
+  }
 }
 class SpaceShip extends Floater  
 {   
