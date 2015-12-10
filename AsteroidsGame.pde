@@ -65,8 +65,8 @@ if(key == '0'){
 
 }
 class Stars{
-  int myX, myY;
-  Stars(){
+  private int myX, myY;
+  public Stars(){
     fill(200);
     stroke(200);
     myX = (int)(Math.random()*500);
@@ -76,10 +76,17 @@ class Stars{
     point(myX, myY);
   }
 }
+class Bullet extends Floater{
+
+  myCenterX = pan.x
+  myCenterY = pan.y
+  myPointDirection = 
+
+}
 class Asteroids extends Floater
 {
-  int rotspd;
-  Asteroids(){
+  private int rotspd;
+  public Asteroids(){
     
       corners = 4;
       xCorners = new int[corners];
