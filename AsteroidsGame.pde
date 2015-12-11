@@ -54,7 +54,11 @@ public void draw()
 }
 
 public void keyPressed(){
-  
+
+if(key == '+'){
+  pan.setDirectionX(0);
+  pan.setDirectionY(0);
+}
 if(key == '.'){
   pewpew.add(new Bullet());
 }
